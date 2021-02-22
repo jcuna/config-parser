@@ -12,7 +12,8 @@ In order to run this application you need:
 
 Alternatively you may install python3 on your local system and follow the below instructions
 - navigate to the `src` directory of this repository
-- run `python3 -c "import app; app.parse_config('../config.sample')"`
+- run `python3 -c "import app; app.parse_config('../config.sample')"` to parse the sample config file and print to stdout
+- run `python3 tests.py` to run tests against ConfigParser and LineLexer objects
 
 
 ### Project structure/manifest
