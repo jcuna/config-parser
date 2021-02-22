@@ -27,7 +27,7 @@ noc-list/               # Root directory.
 |-- src/app.py          # Main application file
 ```
 
-### Commands for running and testing application
+### Commands for running and testing application with docker instead of local python3 install
 
 ```shell
 ./run.sh # Reads a sample config file and pretty prints a json version to stdout
