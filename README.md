@@ -46,8 +46,8 @@ noc-list/               # Root directory.
 
 ### Special characters
 - `.` DOT is treated as a valid character and can be part of any literal name or numeric value
-- `_` UNDERSCORE is treated as a valid character and can be part of any literal name but not numeric value
-- `/` FORWARD SLASH is treated as a valid character and can be part of any literal name but not numeric value
+- `_` UNDERSCORE is treated as a valid character and can be part of any literal name but not numeric value or boolean
+- `/` FORWARD SLASH is treated as a valid character and can be part of any literal name but not numeric value or boolean
 - `#` HASH/NUMBER symbol is used to mark the remaining of the line as an ignorable comment (inclusive)
 - `=` EQUAL sign is the assignment operator and cannot be used as literal
 
