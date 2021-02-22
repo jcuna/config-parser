@@ -1,6 +1,6 @@
 # ConfigParser
 
-### A tool to parse and load a key/value config files into native and json formats.
+### A tool to parse and load key/value config files into native and json formats.
 
 ## Usage
 
@@ -27,7 +27,7 @@ noc-list/               # Root directory.
 |-- src/app.py          # Main application file
 ```
 
-### Commands for running and testing application
+### Commands for running and testing application with docker instead of local python3 install
 
 ```shell
 ./run.sh # Reads a sample config file and pretty prints a json version to stdout
@@ -46,8 +46,8 @@ noc-list/               # Root directory.
 
 ### Special characters
 - `.` DOT is treated as a valid character and can be part of any literal name or numeric value
-- `_` UNDERSCORE is treated as a valid character and can be part of any literal name but not numeric value
-- `/` FORWARD SLASH is treated as a valid character and can be part of any literal name but not numeric value
+- `_` UNDERSCORE is treated as a valid character and can be part of any literal name but not numeric value or boolean
+- `/` FORWARD SLASH is treated as a valid character and can be part of any literal name but not numeric value or boolean
 - `#` HASH/NUMBER symbol is used to mark the remaining of the line as an ignorable comment (inclusive)
 - `=` EQUAL sign is the assignment operator and cannot be used as literal
 
