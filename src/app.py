@@ -63,9 +63,10 @@ class LineLexer:
     def get_next_token(self) -> Token:
         self.logger.debug('current char is {}'.format(self.current_char))
         while self.current_char != self.CHAR_EOF:
-            # ignore white space chars
+            # ignore comment lines
             if self.current_char == '#':
                 return Token(self.TOKEN_EOF, '<EOF>')
+            # ignore white space chars
             if self.current_char in [' ', '\n', '\t', '\r']:
                 self._consume()
                 continue
