@@ -24,7 +24,7 @@ class Token:
     """
     A token declaration object
     """
-    def __init__(self, tok_type: int, tok_literal):
+    def __init__(self, tok_type: int, tok_literal: any):
         self.token_type = tok_type
         self.token_literal = tok_literal
 
@@ -160,7 +160,7 @@ class ConfigParser:
 
         return lines
 
-    def get(self, key) -> any:
+    def get(self, key: str) -> any:
         left_op: Token
         mid_op: Token
         right_op: Token
@@ -178,11 +178,11 @@ class ConfigParser:
             dictionary[left_op.token_literal] = right_op.token_literal
         return dictionary
 
-    def to_json(self, indent=None) -> str:
+    def to_json(self, indent: int = None) -> str:
         return json.dumps(self.to_dict(), indent=indent)
 
 
-def parse_config(file_path):
+def parse_config(file_path: str):
     with open(file_path) as stream:
         contents = stream.read()
         parser = ConfigParser(contents)
