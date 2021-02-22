@@ -1,6 +1,6 @@
 # ConfigParser
 
-### A tool to parse and load a key/value config files into native and json formats.
+### A tool to parse and load key/value config files into native and json formats.
 
 ## Usage
 
