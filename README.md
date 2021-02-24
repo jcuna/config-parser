@@ -19,7 +19,7 @@ Alternatively you may install python3 on your local system and follow the below 
 ### Project structure/manifest
 
 ```
-noc-list/               # Root directory.
+config-parser/               # Root directory.
 |- run.sh               # Main application entry point. It abstracts docker commands, app startup and tests
 |- README.md            # This file
 |- src/                 # Main application directory
